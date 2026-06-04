@@ -78,7 +78,6 @@ h4 {
 }
 li h4 {
     display: inline-block;
-    padding-left: 7px;
 }
 section {
     padding: 0 30px 15px;
@@ -134,13 +133,16 @@ table ul li {
 
 ol {
     margin-bottom: 6px;
-    list-style: none;
-    /*list-style-position: inside;*/
+    list-style: disc;
+    list-style-position: inside;
 }
 li {
     font-size: 0.9rem;
     min-height: 1.5rem;
     height: auto;
+}
+ol li::marker {
+    color: var(--color-point);
 }
 
 .skill {
