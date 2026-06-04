@@ -19,7 +19,8 @@ main {
     flex: 1 1 auto; 
     background-color: var(--color-surface);
     box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.3);
-    width: 680px;
+    width: 100%;
+    max-width: 680px;
 }
 header {
     width: 100%;
@@ -71,7 +72,11 @@ h3:before {
 }
 h4 {
     margin: 1rem 0 0.5rem;
-    font-size: 1.1rem;
+    font-size: 1rem;
+}
+li h4 {
+    display: inline-block;
+    padding-left: 7px;
 }
 section {
     padding: 0 30px 15px;
@@ -89,7 +94,12 @@ hr {
 .sub-title h4 {
     margin-bottom: 10px;
 }
-
+li table {
+    margin-top: 5px;
+    margin-bottom: 15px;
+    margin-left: 10px;
+    width: calc(100% - 10px)
+}
 table {
     margin-top: 15px;
     margin-bottom: 10px;
@@ -102,26 +112,40 @@ table tr th {
 }
 table tr th,
 table tr td {
-    padding: 5px 3px;
+    padding: 10px 3px;
     border-bottom: 1px solid var(--color-border);
     vertical-align: baseline;
 }
-table td ol {
+table td ul {
     list-style-type: "-";
+    list-style-position: outside;
 }
-table td ol li {
+table ul li {
+    padding-left: 0.5rem;
+}
+.table-edu ul li {
     padding-left: 1rem;
 }
 .table-edu td {
     font-size: 0.9rem;
 }
 
-ul {
+ol {
     margin-bottom: 6px;
-    list-style: circle;
-    list-style-position: inside;
+    list-style: none;
+    /*list-style-position: inside;*/
 }
 li {
     font-size: 0.9rem;
-    height: 1.5rem;
+    min-height: 1.5rem;
+    height: auto;
+}
+
+.skill {
+    background-color: var(--color-code-bg);
+    color: var(--color-code);
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+    font-family: monospace;
+    font-size: 0.9em;
 }
