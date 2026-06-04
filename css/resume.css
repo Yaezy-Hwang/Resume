@@ -11,6 +11,8 @@ body {
     line-height: 1.5;
     color: var(--text-main);
     font-family: 'Noto Sans KR';
+    width: 100%;
+    height: auto;
 }
 main {
     margin-left: auto;
