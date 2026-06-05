@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url('https://googleapis.com');
 
 html {
     font-size: 14px;
@@ -10,7 +11,8 @@ body {
     align-items: center;
     line-height: 1.5;
     color: var(--text-main);
-    font-family: 'Noto Sans KR';
+    font-family: 'Noto Sans KR', sans-serif;
+    /*font-family: 'Noto Sans KR';*/
     width: 100%;
     height: auto;
 }
@@ -152,4 +154,5 @@ ol li::marker {
     border-radius: 4px;
     font-family: monospace;
     font-size: 0.9em;
+    white-space: nowrap;
 }
