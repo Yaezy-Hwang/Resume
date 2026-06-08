@@ -78,6 +78,12 @@ h4 {
     margin: 1rem 0 0.5rem;
     font-size: 1rem;
 }
+a, a:visited {
+    color: var(--text-main);
+}
+a:hover {
+    color: var(--color-point);
+}
 li h4 {
     display: inline-block;
 }
